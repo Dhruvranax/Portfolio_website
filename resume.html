@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhruv Rana - SOC L1 Analyst Resume | Cybersecurity Professional">
-    <title>Dhruv Rana | SOC L1 Analyst Resume</title>
+    <meta name="description" content="Dhruv Rana - SOC L1 Analyst Fresher Resume | Cybersecurity Professional">
+    <title>Dhruv Rana | SOC L1 Analyst Fresher Resume</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,59 +13,62 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .resume-container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
         .resume-header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
             border-bottom: 2px solid var(--border-color);
         }
         .resume-header h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: var(--text-primary);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .resume-header .title {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             color: var(--accent-primary);
             font-weight: 600;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
         .resume-contact {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 18px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         .resume-contact a { color: var(--accent-primary); text-decoration: none; }
+        .resume-contact i { margin-right: 6px; }
         .resume-section {
-            margin-bottom: 35px;
+            margin-bottom: 24px;
         }
         .resume-section h2 {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 20px;
-            padding-bottom: 8px;
+            margin-bottom: 16px;
+            padding-bottom: 6px;
             border-bottom: 1px solid var(--border-color);
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
-        .resume-section h2 i { color: var(--accent-primary); }
-        .experience-item, .education-item, .project-item {
-            margin-bottom: 20px;
-            padding-left: 20px;
+        .resume-section h2 i { color: var(--accent-primary); font-size: 1rem; }
+        .education-item {
+            margin-bottom: 16px;
+            padding-left: 18px;
             border-left: 2px solid var(--border-color);
             position: relative;
         }
-        .experience-item::before, .education-item::before {
+        .education-item::before {
             content: '';
             position: absolute;
             left: -6px;
@@ -81,19 +84,20 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
-        .item-title { font-weight: 600; color: var(--text-primary); font-size: 1.05rem; }
-        .item-org { color: var(--accent-primary); font-weight: 500; }
-        .item-date { color: var(--text-muted); font-size: 0.9rem; font-family: var(--font-mono); white-space: nowrap; }
-        .item-location { color: var(--text-muted); font-size: 0.9rem; }
-        .item-bullets { list-style: none; padding: 0; }
+        .item-title { font-weight: 600; color: var(--text-primary); font-size: 1rem; }
+        .item-org { color: var(--accent-primary); font-weight: 500; font-size: 0.95rem; }
+        .item-date { color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono); white-space: nowrap; }
+        .item-location { color: var(--text-muted); font-size: 0.85rem; }
+        .item-bullets { list-style: none; padding: 0; margin-top: 8px; }
         .item-bullets li {
             position: relative;
-            padding-left: 20px;
-            margin-bottom: 8px;
+            padding-left: 16px;
+            margin-bottom: 6px;
             color: var(--text-secondary);
-            line-height: 1.6;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
         .item-bullets li::before {
             content: '▸';
@@ -104,51 +108,70 @@
         }
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
         }
         .skill-category {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 20px;
+            padding: 16px;
         }
         .skill-category h3 {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 600;
             color: var(--accent-primary);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
-        .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-        .skill-tag { font-size: 0.85rem; color: var(--text-secondary); background: var(--bg-primary); padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); }
-        .cert-list { display: flex; flex-direction: column; gap: 12px; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .skill-tag { font-size: 0.8rem; color: var(--text-secondary); background: var(--bg-primary); padding: 3px 8px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); }
+        .project-item {
+            margin-bottom: 14px;
+            padding: 14px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            transition: border-color var(--transition-fast);
+        }
+        .project-item:hover { border-color: var(--accent-primary); }
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .project-title { font-weight: 600; color: var(--text-primary); font-size: 0.95rem; }
+        .project-tech { color: var(--accent-primary); font-size: 0.8rem; font-family: var(--font-mono); }
+        .project-desc { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; }
+        .cert-list { display: flex; flex-direction: column; gap: 10px; }
         .cert-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+            padding: 12px 16px;
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
         }
-        .cert-name { font-weight: 600; color: var(--text-primary); }
-        .cert-org { color: var(--text-muted); font-size: 0.9rem; }
-        .cert-date { color: var(--accent-primary); font-family: var(--font-mono); font-size: 0.85rem; }
+        .cert-name { font-weight: 600; color: var(--text-primary); font-size: 0.9rem; }
+        .cert-org { color: var(--text-muted); font-size: 0.8rem; }
+        .cert-date { color: var(--accent-primary); font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap; }
         .download-btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            margin-top: 30px;
-            padding: 14px 32px;
+            margin-top: 24px;
+            padding: 12px 28px;
             background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
             color: var(--bg-primary);
             font-weight: 600;
             border: none;
             border-radius: var(--radius-pill);
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: all var(--transition-normal);
         }
         .download-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
@@ -156,16 +179,28 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.9rem;
             transition: color var(--transition-fast);
         }
         .back-link:hover { color: var(--accent-primary); }
+        .summary-text {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
         @media print {
             .download-btn, .back-link { display: none; }
             .resume-container { padding: 0; max-width: none; }
+            .resume-section { page-break-inside: avoid; }
+        }
+        @media (max-width: 600px) {
+            .resume-header h1 { font-size: 1.8rem; }
+            .resume-contact { gap: 12px; font-size: 0.8rem; }
+            .skills-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -195,10 +230,10 @@
 
             <header class="resume-header">
                 <h1>Dhruv Rana</h1>
-                <p class="title">SOC L1 Analyst | VAPT Fresher | Digital Forensics Student</p>
+                <p class="title">SOC L1 Analyst Fresher | VAPT Enthusiast | Digital Forensics Student</p>
                 <div class="resume-contact">
                     <span><i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India</span>
-                    <span><i class="fas fa-envelope"></i> <a href="mailto:dhruvrana@example.com">dhruvrana@example.com</a></span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:dhruvrrana2@gmail.com">dhruvrrana2@gmail.com</a></span>
                     <span><i class="fas fa-phone"></i> +91-XXXXXXXXXX</span>
                     <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/dhruv-rana-1b35782a1" target="_blank">linkedin.com/in/dhruv-rana</a></span>
                     <span><i class="fab fa-github"></i> <a href="https://github.com/Dhruvranax" target="_blank">github.com/Dhruvranax</a></span>
@@ -207,48 +242,11 @@
 
             <section class="resume-section">
                 <h2><i class="fas fa-bullseye"></i> Professional Summary</h2>
-                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
-                    MSc Digital Forensics & Cyber Security student at Institute of Advanced Research, Gandhinagar with hands-on experience in network security monitoring, vulnerability assessment, and incident response.
-                    Proficient in SIEM tools (Splunk, ELK), network analysis (Wireshark, Nmap), and penetration testing frameworks (Metasploit, Burp Suite).
-                    Seeking SOC L1 Analyst position to apply threat detection, log analysis, and alert triage skills in a dynamic Security Operations Center environment.
+                <p class="summary-text">
+                    MSc Digital Forensics & Cyber Security student at Institute of Advanced Research, Gandhinagar (2023-2025) with strong foundation in network security, vulnerability assessment, and incident response.
+                    Hands-on experience with SIEM (Splunk, ELK), packet analysis (Wireshark), vulnerability scanning (Nessus, Nmap), and penetration testing (Burp Suite, Metasploit) through academic labs and personal projects.
+                    Completed 100+ TryHackMe labs (SOC Level 1, Pre-Security paths) and active CTF participant. Seeking entry-level SOC Analyst role to apply threat detection, log analysis, and alert triage skills in a professional Security Operations Center.
                 </p>
-            </section>
-
-            <section class="resume-section">
-                <h2><i class="fas fa-briefcase"></i> Experience</h2>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Cybersecurity Intern</div>
-                            <div class="item-org">Institute of Advanced Research, Gandhinagar</div>
-                        </div>
-                        <div class="item-date">Jan 2024 – Present</div>
-                    </div>
-                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> Gandhinagar, Gujarat</div>
-                    <ul class="item-bullets">
-                        <li>Monitor SIEM alerts (Splunk/ELK) for suspicious activities including brute force, port scanning, and malware C2 traffic</li>
-                        <li>Perform log analysis on firewall, proxy, and endpoint logs to identify IOCs and reduce false positives by 35%</li>
-                        <li>Conduct vulnerability scans using Nessus/OpenVAS; remediate critical findings across 50+ assets</li>
-                        <li>Assist in incident response: containment, evidence collection, and root cause analysis for phishing and malware incidents</li>
-                        <li>Develop Python automation scripts for log parsing, alert enrichment, and report generation</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Security Research Assistant</div>
-                            <div class="item-org">Digital Forensics Lab, IAR</div>
-                        </div>
-                        <div class="item-date">Aug 2023 – Dec 2023</div>
-                    </div>
-                    <div class="item-location"><i class="fas fa-map-marker-alt"></i> Gandhinagar, Gujarat</div>
-                    <ul class="item-bullets">
-                        <li>Analyzed disk images and memory dumps using Autopsy, Volatility, and FTK Imager for forensic investigations</li>
-                        <li>Researched MITRE ATT&CK techniques; mapped detection rules for T1059, T1003, T1055</li>
-                        <li>Built lab environment (DVWA, bWAPP, Metasploitable) for OWASP Top 10 vulnerability testing</li>
-                        <li>Documented findings in forensic reports following NIST SP 800-86 guidelines</li>
-                    </ul>
-                </div>
             </section>
 
             <section class="resume-section">
@@ -263,8 +261,9 @@
                     </div>
                     <div class="item-location"><i class="fas fa-map-marker-alt"></i> Gandhinagar, Gujarat</div>
                     <ul class="item-bullets">
-                        <li>Relevant Coursework: Network Security, Malware Analysis, Incident Response, Cryptography, Digital Forensics</li>
-                        <li>Capstone: "Automated Threat Detection using ML on SIEM Logs" — 92% grade</li>
+                        <li>Coursework: Network Security, Malware Analysis, Incident Response, Cryptography, Digital Forensics, SIEM Operations</li>
+                        <li>Capstone Project: "Automated Threat Detection using ML on SIEM Logs" — Grade: 92%</li>
+                        <li>Lab Experience: Splunk/ELK log analysis, Wireshark packet capture, Nessus vulnerability scanning, Metasploit exploitation</li>
                     </ul>
                 </div>
                 <div class="education-item">
@@ -277,7 +276,7 @@
                     </div>
                     <div class="item-location"><i class="fas fa-map-marker-alt"></i> Surat, Gujarat</div>
                     <ul class="item-bullets">
-                        <li>Core Subjects: Data Structures, Operating Systems, Computer Networks, Database Systems, Web Technologies</li>
+                        <li>Core: Data Structures, Operating Systems, Computer Networks, Database Systems, Web Technologies, Python</li>
                         <li>Final Year Project: "Network Intrusion Detection System using Machine Learning"</li>
                     </ul>
                 </div>
@@ -291,7 +290,6 @@
                         <div class="skill-tags">
                             <span class="skill-tag">Splunk</span>
                             <span class="skill-tag">ELK Stack</span>
-                            <span class="skill-tag">Graylog</span>
                             <span class="skill-tag">Log Analysis</span>
                             <span class="skill-tag">Alert Triage</span>
                             <span class="skill-tag">Correlation Rules</span>
@@ -303,9 +301,8 @@
                             <span class="skill-tag">Nessus</span>
                             <span class="skill-tag">OpenVAS</span>
                             <span class="skill-tag">Nmap</span>
-                            <span class="skill-tag">Qualys</span>
                             <span class="skill-tag">Risk Assessment</span>
-                            <span class="skill-tag">Patch Management</span>
+                            <span class="skill-tag">CVSS Scoring</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -313,21 +310,19 @@
                         <div class="skill-tags">
                             <span class="skill-tag">Wireshark</span>
                             <span class="skill-tag">tcpdump</span>
-                            <span class="skill-tag">Zeek</span>
                             <span class="skill-tag">PCAP Analysis</span>
                             <span class="skill-tag">Network Protocols</span>
-                            <span class="skill-tag">Traffic Anomaly Detection</span>
+                            <span class="skill-tag">Traffic Analysis</span>
                         </div>
                     </div>
                     <div class="skill-category">
                         <h3>Penetration Testing</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Metasploit</span>
                             <span class="skill-tag">Burp Suite</span>
+                            <span class="skill-tag">Metasploit</span>
                             <span class="skill-tag">OWASP ZAP</span>
                             <span class="skill-tag">SQLMap</span>
                             <span class="skill-tag">OWASP Top 10</span>
-                            <span class="skill-tag">Web App Testing</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -338,7 +333,6 @@
                             <span class="skill-tag">FTK Imager</span>
                             <span class="skill-tag">Memory Forensics</span>
                             <span class="skill-tag">Disk Imaging</span>
-                            <span class="skill-tag">NIST SP 800-86</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -349,46 +343,47 @@
                             <span class="skill-tag">PowerShell</span>
                             <span class="skill-tag">Regex</span>
                             <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">Log Parsing</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="resume-section">
-                <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div class="item-title">SIEM Log Analysis Dashboard</div>
-                        <div class="item-date">2024</div>
+                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">SIEM Log Analysis Dashboard</span>
+                        <span class="project-tech">ELK Stack • Python • Regex</span>
                     </div>
-                    <ul class="item-bullets">
-                        <li>Real-time security monitoring dashboard using ELK Stack; ingests syslog/firewall logs</li>
-                        <li>Custom correlation rules for brute force, port scans, malware C2; 40% reduction in MTTD</li>
-                        <li>Tech: Elasticsearch, Logstash, Kibana, Regex, Python</li>
-                    </ul>
+                    <p class="project-desc">Real-time security monitoring dashboard ingesting syslog/firewall logs. Custom correlation rules for brute force, port scans, malware C2. 40% reduction in mean time to detect (MTTD).</p>
                 </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div class="item-title">Network Vulnerability Scanner</div>
-                        <div class="item-date">2024</div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">Network Vulnerability Scanner</span>
+                        <span class="project-tech">Python • Nmap • Threading • ReportLab</span>
                     </div>
-                    <ul class="item-bullets">
-                        <li>Automated scanner using Python-Nmap; host discovery, port scanning, service enumeration</li>
-                        <li>Generates HTML/JSON reports with CVSS risk ratings; multi-threaded for performance</li>
-                        <li>Tech: Python, Nmap, Threading, ReportLab, JSON</li>
-                    </ul>
+                    <p class="project-desc">Automated scanner for host discovery, port scanning, service enumeration, and vulnerability detection. Generates professional HTML/JSON reports with CVSS risk ratings.</p>
                 </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div class="item-title">Web App Penetration Testing Lab</div>
-                        <div class="item-date">2023</div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">Web App Penetration Testing Lab</span>
+                        <span class="project-tech">Docker • DVWA • bWAPP • Burp Suite • SQLMap</span>
                     </div>
-                    <ul class="item-bullets">
-                        <li>Dockerized lab (DVWA, bWAPP, Mutillidae) for OWASP Top 10 practice</li>
-                        <li>Automated setup scripts, exploitation guides, remediation docs for SQLi, XSS, CSRF</li>
-                        <li>Tech: Docker, Burp Suite, SQLMap, OWASP</li>
-                    </ul>
+                    <p class="project-desc">Dockerized vulnerable environment (DVWA, bWAPP, Mutillidae) for OWASP Top 10 practice. Includes automated setup, exploitation guides, and remediation docs for SQLi, XSS, CSRF.</p>
+                </div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">Password Strength Analyzer</span>
+                        <span class="project-tech">Python • zxcvbn • Flask • Entropy</span>
+                    </div>
+                    <p class="project-desc">Entropy-based password checker with real-time feedback. Implements zxcvbn algorithm, checks against rockyou.txt, detects patterns (keyboard walks, dates), suggests improvements.</p>
+                </div>
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">Automated Vulnerability Report Generator</span>
+                        <span class="project-tech">Python • XML • Jinja2 • Nessus API</span>
+                    </div>
+                    <p class="project-desc">Parses Nessus/OpenVAS XML outputs to generate professional pentest reports with executive summary, risk matrix, affected hosts, remediation tracking, and compliance mapping.</p>
                 </div>
             </section>
 
@@ -435,16 +430,16 @@
 
             <section class="resume-section">
                 <h2><i class="fas fa-award"></i> Achievements & Activities</h2>
-                <ul class="item-bullets" style="padding-left: 20px;">
-                    <li>CTF Participant: Solved 50+ challenges across crypto, forensics, web, pwn on TryHackMe & HackTheBox</li>
-                    <li>Active member of IAR Cybersecurity Club; conducted workshops on Wireshark & Burp Suite</li>
-                    <li>Published write-up on "CVE-2021-44228 Log4Shell Exploitation & Detection" on Medium</li>
-                    <li>Completed 100+ labs on TryHackMe (Pre-Security, Complete Beginner, SOC Level 1 paths)</li>
+                <ul class="item-bullets" style="padding-left: 0;">
+                    <li>TryHackMe: Completed 100+ labs (Pre-Security, Complete Beginner, SOC Level 1 paths)</li>
+                    <li>CTF: Solved 50+ challenges across crypto, forensics, web, pwn on TryHackMe & HackTheBox</li>
+                    <li>Published write-up: "CVE-2021-44228 Log4Shell Exploitation & Detection" on Medium</li>
+                    <li>Active member, IAR Cybersecurity Club — conducted workshops on Wireshark & Burp Suite</li>
                 </ul>
             </section>
 
             <div style="text-align: center;">
-                <button class="download-btn" onclick="downloadPDF()">
+                <button class="download-btn" onclick="window.print()">
                     <i class="fas fa-download"></i> Download as PDF
                 </button>
             </div>
@@ -452,11 +447,6 @@
     </main>
 
     <script>
-        function downloadPDF() {
-            window.print();
-        }
-
-        // Theme toggle
         const themeToggle = document.querySelector('.theme-toggle');
         const html = document.documentElement;
         const savedTheme = localStorage.getItem('theme') || 'dark';
