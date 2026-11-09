@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhruv Rana - Cybersecurity Professional | SOC L1 & VAPT Fresher | Digital Forensics & Cyber Security MSc Student">
+    <meta name="keywords" content="Cybersecurity, SOC Analyst, VAPT, Digital Forensics, Network Security, Penetration Testing">
+    <meta name="author" content="Dhruv Rana">
+    <title>Dhruv Rana | Cybersecurity Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Three.js for 3D effects -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">DR</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Projects</a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="floating-elements">
+                <div class="float-element" style="--i: 0"><i class="fas fa-shield-alt"></i></div>
+                <div class="float-element" style="--i: 1"><i class="fas fa-lock"></i></div>
+                <div class="float-element" style="--i: 2"><i class="fas fa-bug"></i></div>
+                <div class="float-element" style="--i: 3"><i class="fas fa-network-wired"></i></div>
+                <div class="float-element" style="--i: 4"><i class="fas fa-terminal"></i></div>
+                <div class="float-element" style="--i: 5"><i class="fas fa-search"></i></div>
+            </div>
+            <!-- 3D Scene Container -->
+            <div id="hero-3d-scene" class="hero-3d-scene" aria-hidden="true"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Dhruv Rana</h1>
+                <div class="hero-titles">
+                    <span class="title-item" data-text="SOC L1 Analyst Aspirant">SOC L1 Analyst Aspirant</span>
+                    <span class="title-item" data-text="VAPT Fresher">VAPT Fresher</span>
+                    <div class="hero-divider"></div>
+                    <span class="title-item" data-text="Digital Forensics Student">Digital Forensics Student</span>
+                </div>
+                <p class="hero-description">
+                    MSc Digital Forensics & Cyber Security student at Institute of Advanced Research, Gandhinagar.
+                    Passionate about threat detection, vulnerability assessment, and incident response.
+                    Seeking entry-level opportunities in Security Operations Center and Vulnerability Assessment.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">20</span>
+                        <span class="stat-label">Years Old</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Tools Mastered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number text">Surat</span>
+                        <span class="stat-label">Gujarat, India</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Dhruvranax" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhruv-rana-1b35782a1" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:dhruvrrana2@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="terminal-title">dhruv@portfolio:~$</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">dhruv@portfolio:~$</span>
+                            <span class="command"> whoami</span>
+                        </div>
+                        <div class="terminal-line output">Dhruv Rana | Cybersecurity Enthusiast</div>
+                        <div class="terminal-line">
+                            <span class="prompt">dhruv@portfolio:~$</span>
+                            <span class="command"> cat skills.txt</span>
+                        </div>
+                        <div class="terminal-line output skills-output">
+                            <span>[Network Security]</span>
+                            <span>[Vulnerability Assessment]</span>
+                            <span>[SIEM/SOC Operations]</span>
+                            <span>[Digital Forensics]</span>
+                            <span>[Penetration Testing]</span>
+                            <span>[Incident Response]</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">dhruv@portfolio:~$</span>
+                            <span class="command"> cat tools.txt</span>
+                        </div>
+                        <div class="terminal-line output tools-output">
+                            <span>Nmap</span>
+                            <span>Metasploit</span>
+                            <span>Wireshark</span>
+                            <span>Nessus</span>
+                            <span>Burp Suite</span>
+                            <span>Kali Linux</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">dhruv@portfolio:~$</span>
+                            <span class="command"> python3 --version</span>
+                        </div>
+                        <div class="terminal-line output">Python 3.11.0 | Java 17 | JavaScript ES6+</div>
+                        <div class="terminal-line">
+                            <span class="prompt">dhruv@portfolio:~$</span>
+                            <span class="command blinking">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Cybersecurity Professional in Making</h3>
+                    <p>
+                        I'm <strong>Dhruv Rana</strong>, a 20-year-old cybersecurity enthusiast from Surat, Gujarat.
+                        <strong>MSc in Digital Forensics and Cyber Security (Class of 2026)</strong> from
+                        <strong>Institute of Advanced Research, Gandhinagar</strong>.
+                    </p>
+                    <p>
+                        My journey into cybersecurity began with a fascination for how systems communicate and where
+                        vulnerabilities hide. Through academic rigor and hands-on practice, I've developed a strong
+                        foundation in both defensive and offensive security domains.
+                    </p>
+                    <p>
+                        I'm actively seeking <strong>SOC L1 Analyst</strong> and <strong>VAPT Fresher</strong> positions
+                        where I can apply my technical skills in network monitoring, threat detection, vulnerability
+                        assessment, and incident response while continuing to grow under experienced mentorship.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-eye"></i>
+                            <div>
+                                <h4>Threat Monitoring</h4>
+                                <p>Real-time security event analysis</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-bug"></i>
+                            <div>
+                                <h4>Vulnerability Assessment</h4>
+                                <p>Identifying & exploiting weaknesses</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Incident Response</h4>
+                                <p>Rapid containment & recovery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                        <div class="card-content">
+                            <h4>Education</h4>
+                            <p>MSc Digital Forensics & Cyber Security</p>
+                            <span>Institute of Advanced Research, Gandhinagar</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="card-content">
+                            <h4>Location</h4>
+                            <p>Surat, Gujarat, India</p>
+                            <span>Open to relocation</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="card-content">
+                            <h4>Seeking</h4>
+                            <p>SOC L1 Analyst / VAPT Fresher</p>
+                            <span>Full-time opportunities</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-content">
+                            <h4>Languages</h4>
+                            <p>English, Hindi, Gujarati</p>
+                            <span>Technical: Python, Java, JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Tools & technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-category="security">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Security Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-terminal"></i> Nmap</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-bomb"></i> Metasploit</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-shark"></i> Wireshark</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-search"></i> Nessus</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-sitemap"></i> Burp Suite</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-linux"></i> Kali Linux</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-eye"></i> SIEM (Splunk/ELK)</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-shield-alt"></i> IDS/IPS</span>
+                        <span class="skill-tag" data-color="var(--color-security)"><i class="fas fa-radar"></i> SOC Monitoring</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="development">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fas fa-plus"></i> C++</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="network">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Security Domains</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="var(--color-network)">Network Security</span>
+                        <span class="skill-tag" data-color="var(--color-network)">Vulnerability Assessment</span>
+                        <span class="skill-tag" data-color="var(--color-network)">Penetration Testing</span>
+                        <span class="skill-tag" data-color="var(--color-forensics)">Digital Forensics</span>
+                        <span class="skill-tag" data-color="var(--color-network)">Incident Response</span>
+                        <span class="skill-tag" data-color="var(--color-network)">Threat Intelligence</span>
+                        <span class="skill-tag" data-color="var(--color-network)">Log Analysis</span>
+                        <span class="skill-tag" data-color="var(--color-network)">Malware Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="development">
+                    <div class="category-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Frameworks & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fas fa-leaf"></i> Express.js</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="skill-tag" data-color="var(--color-development)"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fab fa-git"></i> Git/GitHub</span>
+                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-tag"><i class="fas fa-cloud"></i> Cloud Basics</span>
+                        <span class="skill-tag"><i class="fas fa-lock"></i> OWASP Top 10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="proficiency-section">
+                <h3>Proficiency Levels</h3>
+                <div class="proficiency-bars">
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>Network Scanning (Nmap)</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>Vulnerability Scanning (Nessus)</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>Packet Analysis (Wireshark)</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>Exploitation (Metasploit)</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>Python for Security Automation</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>Web App Testing (Burp Suite)</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 70%"></div></div>
+                    </div>
+                    <div class="proficiency-item">
+                        <div class="proficiency-info">
+                            <span>SOC Monitoring & Alert Triage</span>
+                        </div>
+                        <div class="proficiency-bar"><div class="proficiency-fill" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Hands-on cybersecurity projects</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background & achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026 - 2028</div>
+                        <h3>MSc Digital Forensics & Cyber Security</h3>
+                        <p class="timeline-institute">Institute of Advanced Research, Gandhinagar</p>
+                        <ul class="timeline-details">
+                            <li>Specialized coursework in Digital Forensics, Network Security, Cryptography</li>
+                            <li>Hands-on labs with Kali Linux, Metasploit, Wireshark, Nessus</li>
+                            <li>Research focus: Threat detection and incident response methodologies</li>
+                            <li>Capstone project: Automated vulnerability assessment framework</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2026</div>
+                        <h3>Bachelor Of Computer Application(BCA)</h3>
+                        <p class="timeline-institute">Veer Narmad South Gujarat University, Surat</p>
+                        <ul class="timeline-details">
+                            <li>Strong foundation in Computer Science fundamentals</li>
+                            <li>Programming: Java, Python, C++, Web Technologies</li>
+                            <li>Database Management Systems, Computer Networks</li>
+                            <li>Final year project: Secure authentication system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Training</h2>
+                <p class="section-subtitle">Continuous learning & skill validation</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-linux"></i></div>
+                    <h3>Kali Linux Fundamentals</h3>
+                    <p>Offensive Security / Self-study</p>
+                    <span class="cert-date">2026</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Security Essentials</h3>
+                    <p>Academic Coursework / Labs</p>
+                    <span class="cert-date">2026</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Vulnerability Assessment with Nessus</h3>
+                    <p>Hands-on Lab Practice</p>
+                    <span class="cert-date">2026</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <h3>Python for Cybersecurity</h3>
+                    <p>Code with Harry / Self-paced</p>
+                    <span class="cert-date">2026</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>OWASP Top 10 Web App Security</h3>
+                    <p>PortSwigger Web Security Academy</p>
+                    <span class="cert-date">2026</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-search"></i></div>
+                    <h3>Threat Hunting Fundamentals</h3>
+                    <p>Academic Training / SIEM Labs</p>
+                    <span class="cert-date">2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>I'm always open to discussing new opportunities</h3>
+                    <p>Whether you have a question about my projects, want to discuss a potential role, or just want to connect — feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:dhruvrana@example.com" class="contact-method">
+                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>dhruvrrana2@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Dhruvranax" target="_blank" class="contact-method">
+                            <div class="method-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/Dhruvranax</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhruv-rana-1b35782a1" target="_blank" class="contact-method">
+                            <div class="method-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/dhruv-rana-1b35782a1</p>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Surat, Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">DR</div>
+                    <p>Cybersecurity Professional | SOC L1 & VAPT Aspirant</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Dhruvranax" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhruv-rana-1b35782a1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:dhruvrana@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Dhruv Rana. Built with passion for cybersecurity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script-3d.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
